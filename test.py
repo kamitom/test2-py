@@ -8,8 +8,8 @@ wb2 = Workbook()
 
 ws = wb2.active
 
-ws['C1'] = random.random()
-ws['A1'] = random.random()
+ws['C1'] = random.randint(1, 999)
+ws['A1'] = random.randint(2, 888)
 
 # TypeError: unsupported operand type(s) for *: 'Cell' and 'Cell'
 ws['A5'] = 100 + 2
@@ -20,9 +20,11 @@ ws['A5'] = 100 + 2
 # ws['A2'] = datetime.datetime.now()
 
 fname = random.randint(1, 1000)
-print(type(fname))
+print("obj type: " + str(type(fname)))
 print(fname)
 
 filename = str(fname) + ".xlsx"
 
 wb2.save(filename)
+
+wb2.close()
