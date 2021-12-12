@@ -6,6 +6,7 @@
 """
 
 import time
+import names
 
 
 def one1(endSec):
@@ -18,6 +19,7 @@ def one1(endSec):
         # print(time.localtime(time.time()))  # localtime time
         # # time.struct_time(tm_year=2021, tm_mon=12, tm_mday=12, tm_hour=13, tm_min=37, tm_sec=15, tm_wday=6, tm_yday=346, tm_isdst
         print(time_formatted)
+        print(names.get_full_name())
 
         time.sleep(1)
 
