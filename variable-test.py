@@ -26,3 +26,16 @@ mv_area = 11.995
 mv_density = mv_population / mv_area
 print(mv_population)
 print(mv_density)
+
+print(type(8.))
+print(type(4))
+
+print(int(2.3))
+print(float(9))
+
+# use This (PEP 8)
+print(3*7 - 2)
+
+print('.1+.1+.1 in Python is: ', .1+.1+.1)
+
+print(5/0)
